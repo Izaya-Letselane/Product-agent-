@@ -12,7 +12,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 # -----------------------
 # Setup
@@ -149,3 +149,4 @@ elif st.session_state.step == 4:
     with col3:
         if st.button("Regenerate"):
             st.session_state.step = 3
+
