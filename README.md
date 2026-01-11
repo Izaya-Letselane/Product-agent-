@@ -3,19 +3,16 @@
 User
  │
  │ (button click / form submit)
- ▼
 UI Controller (Streamlit)
  │
  │ (state mutation)
- ▼
 Agent Logic (LangChain)
  │
  │ (bounded prompt)
- ▼
+
 LLM (Gemini)
  │
  │ (≤120 chars enforced)
- ▼
 UI Renderer
 
 2. States management
@@ -23,12 +20,10 @@ UI STATE
 - step: int
 - buttons visible
 - inputs enabled/disabled
-
 AGENT STATE
 - product
 - audience
 - generation prompt
-
 MEMORY STATE (Session)
 - product: str
 - audience: str
